@@ -33,7 +33,7 @@ void expander_init(const expander *slaves, uint8_t count) {
         for (uint8_t j = 0; j < num; j++) {
             uint8_t cmd = CMD_CONFIG * num + j;
             uint8_t conf = ALL_INPUT;
-            i2c_status_t ret = i2c_writeReg(addr, cmd, &conf, sizeof(conf), TIMEOUT);
+            i2c_status_t ret = i2c_write_register(addr, cmd, &conf, sizeof(conf), TIMEOUT);
             if (ret != I2C_STATUS_SUCCESS) {
                 xprintf("config pins FAILED: %d, addr: %02X, cmd: %02X conf: %d\n", ret, addr, cmd, conf);
             } else {
@@ -48,7 +48,7 @@ uint16_t expander_readPins(const expander *slave) {
     uint8_t data[2] = { 0xff, 0xff };     // num_port <= 2
     uint8_t cmd = CMD_INPUT * slave->num_port;
 
-    i2c_status_t ret = i2c_readReg(addr, cmd, data, slave->num_port, TIMEOUT);
+    i2c_status_t ret = i2c_read_register(addr, cmd, data, slave->num_port, TIMEOUT);
     if (ret != I2C_STATUS_SUCCESS) {
 //        xprintf("expander_readPins FAILED: %d, addr: %02X, cmd: %02X\n", ret, addr, cmd);
         return 0x0000;

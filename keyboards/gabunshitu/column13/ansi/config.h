@@ -23,8 +23,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define VENDOR_ID    0xAB01
 //#define PRODUCT_ID   0xC130
 //#define DEVICE_VER   0x0001
-//#define MANUFACTURER kazhida
-//#define PRODUCT      Column13
+//#define MANUFACTURER "kazhida"
+//#define PRODUCT      "Column13"
 
 /* key matrix size */
 #define MATRIX_ROWS 4
@@ -65,6 +65,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define WS2812_DI_PIN D3
 #ifdef WS2812_DI_PIN
 #    define RGBLED_NUM 48
+#    define RGBLIGHT_LED_COUNT RGBLED_NUM
 #    define RGBLIGHT_HUE_STEP 8
 #    define RGBLIGHT_SAT_STEP 8
 #    define RGBLIGHT_VAL_STEP 8

@@ -2,6 +2,11 @@
     "keyboard_name": "Column13 iso",
     "url": "https://lab.abplus.com/column13no/",
     "maintainer": "kazhida",
+    "usb": {
+        "vid": "0xAB01",
+        "pid": "0xC135",
+        "device_version": "0.0.2"
+    },
     "width": 13,
     "height": 4,
     "layouts": {

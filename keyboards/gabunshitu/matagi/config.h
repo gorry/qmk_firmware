@@ -22,9 +22,9 @@
 #define VENDOR_ID       0xAB01
 #define PRODUCT_ID      0x6D74
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    ABplus Inc.
-#define PRODUCT         matagi
-#define DESCRIPTION     ABplus matagi
+#define MANUFACTURER    "ABplus Inc."
+#define PRODUCT         "matagi"
+#define DESCRIPTION     "ABplus matagi"
 
 /* key matrix size */
 #define MATRIX_ROWS 5

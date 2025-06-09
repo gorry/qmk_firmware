@@ -22,6 +22,7 @@ RGBLIGHT_ENABLE = yes        # Enable keyboard RGB underglow
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 AUDIO_ENABLE = no           # Audio output
 I2C_DRIVER_REQUIRED = yes
+LTO_ENABLE = yes
 
 #RGB_MATRIX_ENABLE = no
 RGB_MATRIX_DRIVER = ws2812

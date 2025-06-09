@@ -23,9 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID 0xFEED
 #define PRODUCT_ID 0x0000
 #define DEVICE_VER 0x0001
-#define MANUFACTURER ABplus Inc. kazhida
-#define PRODUCT minimaru-4x1
-#define DESCRIPTION A
+#define MANUFACTURER "ABplus Inc. kazhida"
+#define PRODUCT "minimaru-4x1"
+#define DESCRIPTION "A"
 
 /* key matrix size */
 #define MATRIX_ROWS 1

@@ -17,8 +17,14 @@
 #pragma once
 
 // Prefix string literal with L for descriptors
-#define USBCONCAT(a, b) a##b
-#define USBSTR(s) USBCONCAT(L, s)
+//#define USBCONCAT(a, b) a##b
+//#define USBSTR(s) USBCONCAT(L, s)
+
+#define WIDEN_HELPER(str) L##str
+#define WIDEN(str) WIDEN_HELPER(str)
+#define STRINGIZE_HELPER(x) #x
+#define STRINGIZE(x) STRINGIZE_HELPER(x)
+#define USBSTR(str) WIDEN(STRINGIZE(str))
 
 #define HID_VALUE_16(v) ((uint8_t)(v & 0xFF)), ((uint8_t)(v >> 8))
 

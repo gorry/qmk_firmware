@@ -23,8 +23,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID    0xAB01
 #define PRODUCT_ID   0xC509
 #define DEVICE_VER   0x0001
-#define MANUFACTURER ABplus Inc. kazhida
-#define PRODUCT      Minimaru-cursors
+#define MANUFACTURER "ABplus Inc. kazhida"
+#define PRODUCT      "Minimaru-cursors"
 
 /* key matrix size */
 #define MATRIX_ROWS 1

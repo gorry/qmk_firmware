@@ -25,8 +25,8 @@ enum layer_number {
 #define KS_RSPC LSFT_T(KC_SPC)
 #define KL_TAB  LT(_FUNCS, KC_TAB)
 #define KL_LSPC LT(_LOWER, KC_SPC)
-#define KL_KANA LT(_RAISE, KC_LANG1)
-#define KA_EISU LALT_T(KC_LANG2)
+#define KL_KANA LT(_RAISE, KC_LNG1)
+#define KA_EISU LALT_T(KC_LNG2)
 #define cmd(KC) LGUI(KC)
 #define sft(KC) RSFT(KC)
 
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 [_FUNCS] =  LAYOUT(
     _______,KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10, KC_F11, KC_F12,
-    _______,RESET,  _______,_______,_______,_______,_______,_______,_______,_______,RGB_MOD,RGB_TOG,
+    _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,RGB_MOD,RGB_TOG,
     _______,_______,_______,_______,_______,_______,_______,_______,_______,RGB_VAI,RGB_SAI,RGB_VAD,
     _______,_______,_______,_______,_______,        _______,_______,_______,RGB_HUI,RGB_SAD,RGB_HUD
 )
